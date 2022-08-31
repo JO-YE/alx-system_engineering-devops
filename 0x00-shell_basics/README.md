@@ -11,3 +11,5 @@
 6 I love numbers-- to display current directory contents in a long format, with user and group IDs displayed numerically together with the hidden files
 
 7 Welcome--a script that create a directory named my_first_directory in the /tmp/
+
+8 Betty in my first directory-- move file to directory
