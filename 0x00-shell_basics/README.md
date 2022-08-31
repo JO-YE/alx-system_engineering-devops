@@ -7,3 +7,5 @@
 4 The Long Format-- a script to display the current directory in a long format
 
 5 Hidden files-- to display current directory contents, including hidden files
+
+I love numbers-- to display current directory contents in a long format, with user and group IDs displayed numerically together with the hidden files
