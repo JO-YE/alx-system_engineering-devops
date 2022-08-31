@@ -5,3 +5,5 @@
 3 2-bring me home--A script to change the working directory to the user's home directory
 
 4 The Long Format-- a script to display the current directory in a long format
+
+5 Hidden files-- to display current directory contents, including hidden files
