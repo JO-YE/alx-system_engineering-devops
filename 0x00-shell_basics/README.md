@@ -1,1 +1,2 @@
-In this project, I will be working on script writing i.e Shebang
+A script that prints the absolute path name of the current working directory
+Task0-Where am I?
