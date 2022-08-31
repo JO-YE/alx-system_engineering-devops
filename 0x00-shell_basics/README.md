@@ -15,3 +15,5 @@
 8 Betty in my first directory-- move file to directory
 
 9 Bye Bye Betty - script to delete file from a directory
+
+10 Bye bye My first directory-- a script to delete directory my_first_directory
