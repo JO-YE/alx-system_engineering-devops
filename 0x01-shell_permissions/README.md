@@ -26,3 +26,4 @@ The files under this folder are based on shell permission.
 
 10-Write a script that sets the mode of the file hello the same as olleh’s mode. Note: the mode of olleh will not always be 664. Make sure your script works for any mode.
            
+11-Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
