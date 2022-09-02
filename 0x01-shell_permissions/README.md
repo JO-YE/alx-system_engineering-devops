@@ -31,3 +31,5 @@ The files under this folder are based on shell permission.
 12-Create a script that creates a directory called my_dir with permissions 751 in the working directory.
 
 13-Write a script that changes the group owner to school for the file hello
+
+14-Write a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
