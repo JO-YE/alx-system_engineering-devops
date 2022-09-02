@@ -10,3 +10,7 @@ The files under this folder are based on shell permission.
 3-Write a script that changes the owner of the file hello to the user betty.
 
 4-Write a script that creates an empty file called hello.
+
+5-Write a script that adds execute permission to the owner of the file hello.
+
+6-Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
