@@ -23,3 +23,6 @@ The files under this folder are based on shell permission.
            Other users: all the permissions
 
 9-Write a script that sets the mode of the file hello to this: -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
+
+10-Write a script that sets the mode of the file hello the same as olleh’s mode. Note: the mode of olleh will not always be 664. Make sure your script works for any mode.
+           
