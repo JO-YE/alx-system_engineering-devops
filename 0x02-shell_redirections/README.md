@@ -20,4 +20,6 @@ InIn this project, I will be working on script writing i.e Shebang. Shell I/O re
 
 9-Duplicate last line-Write a script that duplicates the last line of the file iacta
 
+10-No more javascript-Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
+11-
