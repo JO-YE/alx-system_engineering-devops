@@ -36,4 +36,9 @@ In this project, I will be working on script writing i.e Shebang. Shell I/O redi
 
 17-I hate bins-Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
 
+18-Letters only please-Display all lines of the file /etc/ssh/sshd_config starting with a letter.
+
+19-A to Z-Replace all characters A and c from input to Z and e respectively.
+
+
 
