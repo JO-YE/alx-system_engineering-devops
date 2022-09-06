@@ -1,4 +1,4 @@
-InIn this project, I will be working on script writing i.e Shebang. Shell I/O redirection and filter.
+11-In this project, I will be working on script writing i.e Shebang. Shell I/O redirection and filter.
 
 0-Hello World- Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
@@ -22,4 +22,6 @@ InIn this project, I will be working on script writing i.e Shebang. Shell I/O re
 
 10-No more javascript-Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
-11-
+11- Don't just count your directories, make your directories count-Write a script that counts the number of directories and sub-directories in the current directory.
+
+
