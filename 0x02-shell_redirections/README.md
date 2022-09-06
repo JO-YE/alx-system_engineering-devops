@@ -1,4 +1,4 @@
-In this project, I will be working on script writing i.e Shebang. Shell I/O redirection and filter.
+InIn this project, I will be working on script writing i.e Shebang. Shell I/O redirection and filter.
 
 0-Hello World- Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
@@ -11,4 +11,6 @@ In this project, I will be working on script writing i.e Shebang. Shell I/O redi
 4-Last lines of a file-Display the last 10 lines of /etc/passwd
 
 5-I'd prefer the first ones actually- Display the first 10 lines of /etc/passwd.
+
+6-Line #2- Write a script that displays the third line of the file iacta.
 
