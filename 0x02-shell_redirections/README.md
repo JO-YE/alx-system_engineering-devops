@@ -10,3 +10,5 @@ In this project, I will be working on script writing i.e Shebang. Shell I/O redi
 
 4-Last lines of a file-Display the last 10 lines of /etc/passwd
 
+5-I'd prefer the first ones actually- Display the first 10 lines of /etc/passwd.
+
