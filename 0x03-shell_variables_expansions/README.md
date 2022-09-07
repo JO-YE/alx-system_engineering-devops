@@ -13,3 +13,6 @@ In this project, I will be working on script writing i.e Shebang
 
 5-Local variables-Create a script that lists all local variables and environment variables, and functions.
 
+6-Creating Local variable-Create a script that creates a new local variable.
+
+7-Creating Global variable-Create a script that creates a new global variable.
