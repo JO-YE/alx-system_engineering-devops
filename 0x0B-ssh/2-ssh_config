@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Configuration - connect to server without typing a passwaord
+sudo vi /etc/ssh/sshd_config
+PasswordAuthentication no
+IdentityFile ~/.ssh/school
+GSSAPIDelegateCredentials no
