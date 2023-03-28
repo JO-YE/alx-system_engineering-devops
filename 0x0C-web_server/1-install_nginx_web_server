@@ -15,13 +15,14 @@ echo "Hello World!" > /etc/nginx/html/index.html
 
 # Creating the Server Block
 echo "server {
-        listen 80;
-        listen [::]:80;
+        listen 80 default_server;
+        listen [::]:80 default_server;
 
         root /etc/nginx/html;
         index index.html index.htm index.html;
 
         server_name 125574-web-01;
+
 }" > /etc/nginx/sites-available/default
 
 # Restarting
