@@ -2,5 +2,27 @@
 # Script that installs Nginx server
 apt-get -y update
 apt-get -y install nginx
+
+# Adjust the firewall
+sudo ufw allow 'Nginx HTTP'
+
+# Configurarion
+mkdir /etc/nginx/html
+
+# Creating the Server Block File
+touch /etc/nginx/index.html
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Creating the Server Block
+echo "server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/test.com/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name 34.229.186.69;
+}" > /etc/nginx/sites-available/default
+
+# Restarting
 service nginx start
