@@ -35,4 +35,12 @@
 - https://en.wikipedia.org/wiki/HTTP_404
 - https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/
 
+| Filename | Description |
+| -------- | ----------- |
+| [0. Transfer a file to your server](https://github.com/JO-YE/alx-system_engineering-devops/blob/master/0x0C-web_server/0-transfer_file) | Write a Bash script that transfers a file from our client to a serve
+Accepts 4 parameters
+The path to the file to be transferred
+The IP of the server we want to transfer the file to
+The username scp connects with
+The path to the SSH private key that scp uses|
 
