@@ -2,6 +2,7 @@
 # Script that installs Nginx server
 apt-get -y update
 apt-get -y install nginx
-echo > /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+echo > /etc/nginx/sites-available/default
+echo > /etc/nginx/sites-enabled/default
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 killall nginx
