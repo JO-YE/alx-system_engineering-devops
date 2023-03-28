@@ -10,15 +10,15 @@ sudo ufw allow 'Nginx HTTP'
 mkdir /etc/nginx/html
 
 # Creating the Server Block File
-touch /etc/nginx/index.html
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.nginx-debian.html
 
 # Creating the Server Block
 echo "server {
         listen 80;
         listen [::]:80;
 
-        root /var/www/test.com/html;
+        root /etc/nginx/html;
         index index.html index.htm index.nginx-debian.html;
 
         server_name 34.229.186.69;
