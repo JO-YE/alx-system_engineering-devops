@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # Script that installs Nginx server
-apt-get update
-apt-get -y install nginx
+sudo apt-get update
+sudo apt-get -y install nginx
 
 # Configurarion
 mkdir /etc/nginx/html
-
 
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
