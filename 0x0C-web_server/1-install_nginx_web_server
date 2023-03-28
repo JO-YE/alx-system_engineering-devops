@@ -21,7 +21,7 @@ echo "server {
         root /etc/nginx/html;
         index index.html index.htm index.nginx-debian.html;
 
-        server_name 34.229.186.69;
+        server_name 125574-web-01;
 }" > /etc/nginx/sites-available/default
 
 # Restarting
