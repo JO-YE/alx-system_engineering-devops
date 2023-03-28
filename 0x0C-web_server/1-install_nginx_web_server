@@ -1,7 +1,40 @@
 #!/usr/bin/env bash
 # Script that installs Nginx server
-apt-get -y update
-apt-get -y install nginx
-echo > /etc/nginx/sites-available/default
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+#apt-get -y update
+#apt-get -y install nginx
+#echo > /etc/nginx/sites-available/default
+#echo "Hello World!" > /var/www/html/index.nginx-debian.html
+#killall nginx
+
+apt-get update
+apt-get install -y nginx
+
+# Configure nginx
+echo "server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        root /var/www/html;
+        index index.html;
+
+        server_name _;
+
+        location / {
+                try_files \$uri \$uri/ =404;
+        }
+
+}" > /etc/nginx/sites-available/default
+
+# Create HTML file with "Hello World!" content
+echo "<html>
+        <head>
+                <title>Hello World!</title>
+        </head>
+        <body>
+                <h1>Hello World!</h1>
+        </body>
+</html>" > /var/www/html/index.html
+
+# Restart nginx
 killall nginx
+/usr/sbin/nginx -g "daemon on;"
