@@ -8,8 +8,17 @@ sudo apt-get -y install nginx
 # Creating Sample
 echo "Hello World!" > /etc/nginx/html/index.html
 
+#redirect
+string_to_replace="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.instagram.com permanent;"
+sudo sed -i "s/server_name _;/$string_to_replace/" /etc/nginx/sites-enabled/default
 
-echo -e "Ceci n'est pas une page" > /etc/nginx/html/404.html
-string_to_replace="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/etc\/nginx\/html;\n\t\tinternal;\n\t}"
+# 404 not found error page
+# if we can consider /var/www/html directory as the default directory
+#+ That will be served if the client request dosnt match any of the other site
+# check the resources provided for more information
+echo -e "Ceci n'est pas une page" > /var/www/html/404.html
+string_to_replace="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 sudo sed -i "s/listen 80 default_server;/$string_to_replace/" /etc/nginx/sites-enabled/default
+
+# Restart Nginx
 service nginx start
