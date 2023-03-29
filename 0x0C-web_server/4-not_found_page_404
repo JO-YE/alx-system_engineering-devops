@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Script that installs Nginx server, redirects /redirect_me and customizes 404 not found
+
+# Installing nginx
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
-mkdir /etc/nginx/html
-
+# Creating Sample
 echo "Hello World!" > /etc/nginx/html/index.html
+
 
 echo -e "Ceci n'est pas une page" > /etc/nginx/html/404.html
 string_to_replace="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/etc\/nginx\/html;\n\t\tinternal;\n\t}"
