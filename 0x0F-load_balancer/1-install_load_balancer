@@ -18,6 +18,5 @@ backend web-backend
     server 125574-web-01 34.229.186.69:80 check
     server 125574-web-02 100.24.255.118:80 check " >> /etc/haproxy/haproxy.cfg
 
-echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 # Restart HAproxy
 service haproxy restart
