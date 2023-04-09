@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Ensuring that Nginx is running and listening on port 80
+cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
