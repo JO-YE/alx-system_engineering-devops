@@ -2,7 +2,8 @@
 
 - links same with WSD #0
 
-[image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/271/B4eeypV.jpg)
+![image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/271/B4eeypV.jpg)
+#file:///C:/Users/default.DESKTOP-F9L4AJ2/Desktop/html%20file/images/B4eeypV_download.jpg
 
 ## Tasks
 - 0-nginx_likes_port_80
