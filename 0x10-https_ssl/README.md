@@ -1,13 +1,13 @@
 # 0x10. HTTPS SSL
 
 ## Links
-[DNS](https://intranet.alxswe.com/concepts/12)
-[Web stack debugging](https://intranet.alxswe.com/concepts/68)
-[HTTPS](https://www.instantssl.com/http-vs-https)
-[SSL](https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html)
-[HAProxy SSL](https://docs.ionos.com/cloud/)
-[TLS termination](https://en.wikipedia.org/wiki/TLS_termination_proxy)
-[Bash function](https://tldp.org/LDP/abs/html/complexfunct.html)
+- [DNS](https://intranet.alxswe.com/concepts/12)
+- [Web stack debugging](https://intranet.alxswe.com/concepts/68)
+- [HTTPS](https://www.instantssl.com/http-vs-https)
+- [SSL](https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html)
+- [HAProxy SSL](https://docs.ionos.com/cloud/)
+- [TLS termination](https://en.wikipedia.org/wiki/TLS_termination_proxy)
+- [Bash function](https://tldp.org/LDP/abs/html/complexfunct.html)
 
 ## General
 - What is HTTPS SSL 2 main roles
