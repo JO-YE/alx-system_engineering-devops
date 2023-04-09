@@ -50,33 +50,6 @@ root@966c5664b21f:/#
 
 - Using what you did for task #0, make your fix short and sweet.
 
-> Your Bash script must be 5 lines long or less
->
-> There must be a new line at the end of the file
->
-> You must respect usual Bash script requirements
->
-> You cannot use ;
->
-> You cannot use &&
->
-> You cannot use wget
->
-> You cannot execute your previous answer file (Do not include the name of the previous script in this one)
->
-> service (init) must say that nginx is not running ← for realYour Bash script must be 5 lines long or less
->
-> There must be a new line at the end of the file
->
-> You must respect usual Bash script requirements
->
-> You cannot use ;
->
-> You cannot use &&
-> You cannot use wget
->  You cannot execute your previous answer file (Do not include the name of the previous script in this one)
->
-> service (init) must say that nginx is not running ← for real
 ```
 root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
