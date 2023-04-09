@@ -2,4 +2,4 @@
 # killing a running process in this case Nginx
 cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-kill nginx
+pkill -o nginx
