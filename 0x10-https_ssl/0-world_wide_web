@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Configuring domain name to point to load balancer IP
+
+print_fxn()
+{
+	var=$(dig "$2"."$1" | grep -A1 "ANSWER SECTION:" | tail -n 1)
+	echo "$2 $var" | awk '{print "The subdomain " $1 " is a " $5 " record and points to " $6}'
+}
+
+if [ $# -eq 1 ]
+then
+  print_fxn "$1" "www"
+  print_fxn "$1" "lb-01"
+  print_fxn "$1" "web-01"
+  print_fxn "$1" "web-02"
+elif [ $# -eq 2 ]
+then
+  print_fxn "$1" "$2"
+fi
