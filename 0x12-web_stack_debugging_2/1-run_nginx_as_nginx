@@ -12,5 +12,8 @@ chmod 644 /etc/nginx/nginx.conf
 # Configuring nginx to listen on all active IPs on port 8080
 sed -i 's/80/8080/g' /etc/nginx/sites-available/default
 
+# apache may interfere with nginx so kill the process
+pkill apache2
+
 # Starting nginx
 sudo -u nginx service nginx start
