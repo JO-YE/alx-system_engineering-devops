@@ -12,4 +12,4 @@ password="$1"
 mysqldump --user="$username" --password="$password" --all-databases > backup.sql
 
 # Create compressed archive of backup.sql
-tar -czvf "$now.tar.gz" "backup.sql"
+tar -czvf "$now.tar.gz" backup.sql
