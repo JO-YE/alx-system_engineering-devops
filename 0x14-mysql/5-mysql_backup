@@ -14,10 +14,10 @@ if [ ! -d "backup" ]; then
 fi
 
 # Dump MySQL databases to backup.sql
-mysqldump --user=$username --password=$password --all-databases > backup/backup.sql
+mysqldump --user="$username" --password="$password" --all-databases > backup/backup.sql
 
 # Create compressed archive of backup.sql
-tar -czvf backup/$now.tar.gz backup/backup.sql
+tar -czvf backup/"$now".tar.gz backup/backup.sql
 
 # Remove backup.sql
 # rm backup/backup.sql
