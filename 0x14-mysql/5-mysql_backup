@@ -2,7 +2,7 @@
 # Bash script that generates a MySQL dump and creates a compressed archive out of it.
 
 # Get today's date
-now=$(date +"%d-%m-%Y")
+now="$(date +"%d-%m-%Y").tar.gz"
 
 # Set MySQL username and password
 username="root"
@@ -12,4 +12,4 @@ password="$1"
 mysqldump --user="$username" --password="$password" --all-databases > backup.sql
 
 # Create compressed archive of backup.sql
-tar -czvf "$now.tar.gz" backup.sql
+tar -czf "$now" "backup.sql"
