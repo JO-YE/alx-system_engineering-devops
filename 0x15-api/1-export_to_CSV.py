@@ -3,7 +3,7 @@
     record all task owned by the employee
 '''
 
-import json
+import csv
 import requests
 import sys
 
@@ -13,14 +13,16 @@ if __name__ == '__main__':
     user_id = int(sys.argv[1])
     user_EP = '{}/users/{}'.format(url, user_id)
     response = requests.get(user_EP).json()
-    username = response.get("name")
+    username = response.get("username")
     tasks_EP = '{}/todos'.format(url)
     tasks = requests.get(tasks_EP).json()
-    task_u = [dic for dic in tasks if dic.get("userId") == user_id]
-    task_c = [dic for dic in task_u if dic.get("completed") is True]
+    task_u = [[user_id, username, dic.get('completed'), dic.get('title')]
+              for dic in tasks if user_id == dic.get('userId')]
 
-    print("Employee {} is done with tasks({}/{}):"
-          .format(username, len(task_c), len(task_u)))
+    # exporting data in CSV format
+    with open('{}.csv'.format(user_id), 'w', newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
-    for task in task_c:
-        print('\t {}'.format(task.get('title')))
+        # write each row of data to csv file
+        for row in task_u:
+            writer.writerow(row)
