@@ -12,12 +12,12 @@ if __name__ == '__main__':
     tasks_EP = '{}/todos'.format(url)
     tasks = requests.get(tasks_EP).json()
     task_u = {user.get('id'): [{"username": user.get('username'),
-                        'task': dic.get('title'),
-                        'completed': dic.get('completed')}
-                        for dic in tasks
-                        if dic.get("userId") == user.get('id')
-                        for user in users]}
+                                'task': dic.get('title'),
+                                'completed': dic.get('completed')}
+                               for dic in tasks
+                               if dic.get("userId") == user.get('id')]
+              for user in users}
 
-    #save to a json file
+    # save to a json file
     with open('todo_all_employees.json', 'w', encoding='utf-8') as f:
         json.dump(task_u, f)
