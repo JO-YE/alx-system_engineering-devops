@@ -17,7 +17,7 @@ if __name__ == '__main__':
     task_u = {user_id: [{"task": dic.get('title'),
                          'completed': dic.get('completed'),
                          'username': username}
-                          for dic in tasks if dic.get("userId") == user_id]}
+                         for dic in tasks if dic.get("userId") == user_id]}
 
     # save to a json file
     with open('{}.json'.format(user_id), 'w', encoding='utf-8') as f:
