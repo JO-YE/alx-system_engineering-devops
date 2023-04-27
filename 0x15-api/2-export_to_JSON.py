@@ -16,7 +16,7 @@ if __name__ == '__main__':
     tasks = requests.get(tasks_EP).json()
     task_u = {user_id: [{"task": dic.get('title'),
                          'completed': dic.get('completed'),
-                         'username': username}
+                        'username': username}
                          for dic in tasks if dic.get("userId") == user_id]}
 
     # save to a json file
