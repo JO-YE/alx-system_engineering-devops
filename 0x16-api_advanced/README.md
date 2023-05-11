@@ -1,7 +1,7 @@
 # 0x16. API advanced
 
 ## Resources
-- [!img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png)
+- ![img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png)
 
 ```
 Questions involving APIs are common for interviews. Sometimes they’re as simple as ‘write a Python script that queries a given endpoint’, sometimes they require you to use recursive functions and format/sort the results.
@@ -20,7 +20,8 @@ A great API to use for some practice is the Reddit API. There’s a lot of endpo
 - How to sort a dictionary by value
 
 ## Tasks
-- [How many subs?](./0-subs.py)
+
+1. [How many subs?](./0-subs.py)
 > Write a function that queries the [Reddit API](https://www.reddit.com/dev/api/) and returns the number of subscribers (not active users, total subscribers) for a given subreddit. If an invalid subreddit is given, the function should return 0.
 > 
 > Hint: No authentication is necessary for most features of the Reddit API. If you’re getting errors related to Too Many Requests, ensure you’re setting a custom User-Agent.
@@ -52,7 +53,7 @@ wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subr
 0
 ```
 
-- [Top Ten](./1-top_ten.py)
+2. [Top Ten](./1-top_ten.py)
 > Write a function that queries the Reddit API and prints the titles of the first 10 hot posts listed for a given subreddit.
 
 ```
@@ -92,7 +93,8 @@ None
 wintermancer@lapbox ~/reddit_api/project $
 ```
 
-- [Recurse it!](./2-recurse.py)
+
+3. [Recurse it!](./2-recurse.py)
 > Write a recursive function that queries the Reddit API and returns a list containing the titles of all hot articles for a given subreddit. If no results are found for the given subreddit, the function should return None.
 > 
 > Hint: The Reddit API uses pagination for separating pages of responses.
@@ -130,7 +132,8 @@ wintermancer@lapbox ~/reddit_api/project $ python3 2-main.py this_is_a_fake_subr
 None
 ```
 
-- [Count it!](./100-count.py)
+
+4. [Count it!](./100-count.py)
 > Write a recursive function that queries the Reddit API, parses the title of all hot articles, and prints a sorted count of given keywords (case-insensitive, delimited by spaces. Javascript should count as javascript, but java should not).
 >
 ```
