@@ -6,7 +6,7 @@ file { '/etc/default/nginx':
 }
 
 service { 'nginx':
-  ensure => running,
-  enable => true,
+  ensure  => running,
+  enable  => true,
   require => File['/etc/default/nginx'],
 }
