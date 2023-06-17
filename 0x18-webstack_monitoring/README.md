@@ -10,7 +10,7 @@
 > Application monitoring: getting data about your running software and making sure it is behaving as expected
 > Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
 
-- [!img1](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/ktCXnhE.jpg)
+- ![img1](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/ktCXnhE.jpg)
 
 ## Resources
 - [What is server monitoring](https://www.sumologic.com/glossary/server-monitoring/)
